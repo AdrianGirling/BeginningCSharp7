@@ -20,16 +20,19 @@ namespace Ch09Ex03 {
 
             MyClass objectA = new MyClass();
             MyClass objectB = objectA;
+            MyClass objectC = objectB;
             objectA.val = 10;
             objectB.val = 20;
+            objectB.val = 30;
 
             myStruct structA = new myStruct();
             myStruct structB = structA;
-            structA.val = 30;
-            structB.val = 40;
+            structA.val = 40;
+            structB.val = 50;
 
             WriteLine($"objectA.val = {objectA.val}");
             WriteLine($"objectB.val = {objectB.val}");
+            WriteLine($"objectC.val = {objectC.val}");
             WriteLine($"structA.val = {structA.val}");
             WriteLine($"structB.val = {structB.val}");
 
